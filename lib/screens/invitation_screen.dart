@@ -32,7 +32,7 @@ class InvitationScreen extends StatelessWidget {
                   fontSize: 20
               ),),
             SizedBox(height: 25,),
-            RoundedButton(onTab: (){}, text: "Import from whale"),
+            RoundedButton(onTab: (){}, text: "🐋 Import from whale"),
             SizedBox(height: 25,),
             InkWell(
               onTap: (){
