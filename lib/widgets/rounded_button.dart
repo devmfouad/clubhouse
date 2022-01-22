@@ -23,14 +23,7 @@ class RoundedButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(24)
           ),
           child: Center(
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text("$text" , style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,),),
-                SizedBox(width: 4.0,),
-                Icon((Icons.arrow_right_alt ) , color: Colors.white,)
-              ],
-            ),
+            child:  Text("$text" , style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,),),
           ),
         ),
       ),

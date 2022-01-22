@@ -1,3 +1,5 @@
+
+import 'package:clubhouse/screens/invitation_screen.dart';
 import 'package:clubhouse/util/constants.dart';
 import 'package:clubhouse/widgets/rounded_button.dart';
 import 'package:country_code_picker/country_code_picker.dart';
@@ -58,7 +60,9 @@ class PhoneAuthScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),),
               SizedBox(height: 40,),
-              RoundedButton(onTab: (){}, text: "Next")
+              RoundedButton(onTab: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => InvitationScreen()));
+              }, text: "Next")
             ],
           ),
         ),
