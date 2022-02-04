@@ -1,3 +1,4 @@
+import 'package:clubhouse/screens/full_name_screen.dart';
 import 'package:clubhouse/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +37,7 @@ class InvitationScreen extends StatelessWidget {
             SizedBox(height: 25,),
             InkWell(
               onTap: (){
-
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => FullNameScreen()));
               },
                 child: Text("Enter my info manually" , style: TextStyle(color: Color(0xff5B75A6)),),
             )
